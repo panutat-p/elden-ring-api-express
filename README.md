@@ -11,6 +11,7 @@ tsc --init
 
 npm i dotenv
 npm i express cors yup
+npm i -D @types/express
 npm i luxon
 npm i -D @types/luxon
 npm i uuid
