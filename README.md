@@ -1,18 +1,27 @@
-# typescript-template
+# elden-ring-api-express
 
 ## Dependencies
 
 ```shell
+npm i -D typescript
+npm i -D ts-node
+npm i -D @types/node
 npm i -D prettier
-npm i -D esbuild
+tsc --init
+
+npm i dotenv
+npm i express cors yup
+npm i luxon
+npm i -D @types/luxon
+npm i uuid
+npm i -D @types/uuid
+npm i mongodb
 ```
 
 ## Guides
 
-https://typestrong.org/ts-node/docs/usage
+https://expressjs.com/en/guide/routing.html
 
-https://prettier.io/docs/en/install.html
+https://dev.to/franciscomendes10866/schema-validation-with-yup-and-express-js-3l19
 
-https://prettier.io/docs/en/configuration.html
-
-https://prettier.io/docs/en/ignore.html
+https://www.mongodb.com/compatibility/using-typescript-with-mongodb-tutorial
