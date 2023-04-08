@@ -1,0 +1,14 @@
+GET http://localhost:4000
+###
+
+GET http://localhost:4000/reflect
+Content-Type: application/json
+
+{
+  "action": "insert",
+  "item": {
+    "sword": "Bloodhound's Fang",
+    "shield": "Brass Shield"
+  }
+}
+###'

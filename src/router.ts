@@ -1,7 +1,7 @@
 import express from 'express';
 import type { Express } from 'express';
 
-import { info } from './handler.js';
+import { info, reflect } from './handler.js';
 
 class Router {
   server: Express;
@@ -13,7 +13,11 @@ class Router {
   }
 
   runServer() {
+    this.server.use(express.json());
+    this.server.use(express.urlencoded({ extended: true }));
+
     this.server.get('/', info);
+    this.server.get('/reflect', reflect);
     this.server.listen(this.port, () => {
       console.log(`[Router] Server is running at http://localhost:${this.port}`);
     });
